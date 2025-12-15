@@ -10,11 +10,4 @@ services:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
       POSTGRES_DB: airflow
-  jupiter:
-    container_name: jupiter
-    image: pshchelo/alpine-jupyter-sci-py3
-    ports:
-      - 80:8888
-    volumes:
-      - /etc/localtime:/etc/localtime:ro
-      - /notebooks:/notebooks
+
